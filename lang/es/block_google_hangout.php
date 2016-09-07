@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_google_hangout', language 'en'
+ * Strings for component 'block_google_hangout', language 'es'
  *
  * @package   block_google_hangout
  * @copyright Nadav Kavalerchik <nadavkav@gmail.com>
@@ -24,12 +24,12 @@
  */
 
 $string['blockstring'] = 'Google Hangout';
-$string['descconfig'] = 'Description of the config section';
-$string['descfoo'] = 'Config description';
-$string['headerconfig'] = 'Config section header';
-$string['labelfoo'] = 'Config label';
-$string['google_hangout:addinstance'] = 'Add a google_hangout block';
-$string['google_hangout:myaddinstance'] = 'Add a google_hangout block to my moodle';
+$string['descconfig'] = 'Descripción de la sección de configuración';
+$string['descfoo'] = 'Descripción de configuración';
+$string['headerconfig'] = 'Encabezado de sección configuración';
+$string['labelfoo'] = 'Etiqueta configuración';
+$string['google_hangout:addinstance'] = 'Añadir un bloque google_hangout';
+$string['google_hangout:myaddinstance'] = 'Añadir un bloque google_hangout a mi moodle';
 $string['pluginname'] = 'Google Hangout';
-$string['starthangoutwithfollowing'] = 'The following users will be emailed to join the Hangout';
-$string['starthangoutsession'] = 'Click the "Google Hangout" button to start a new session';
+$string['starthangoutwithfollowing'] = 'Los siguientes usuarios recibirán un correo electrónico para unirse a la conversación';
+$string['starthangoutsession'] = 'Haga clic en el botón "Google Hangout" para iniciar una nueva sesión';

@@ -55,11 +55,12 @@ class selectusers_to_hanghout_with_form extends moodleform {
             $mform->addElement('advcheckbox', 'usersids[]', $user->firstname . ' ' . $user->lastname , ' email: ' . $user->email, array('group' => 1), array(0,$user->id));
             //$mform->setDefault('usersids', $user->id);
         }
-         $buttons = array();
+        $buttons = array();
         $buttons[] =& $mform->createElement('submit', 'send', get_string('email_send','block_configurable_reports'));
         $buttons[] =& $mform->createElement('cancel');
 
         $mform->addGroup($buttons, 'buttons', get_string('actions'), array(' '), false);
+        $mform->closeHeaderBefore('buttons');
     }
 }
 
@@ -67,7 +68,7 @@ $form = new selectusers_to_hanghout_with_form();
 $userslist = '';
 
 if ($form->is_cancelled()) {
-    redirect(new moodle_url('/course/view.php?id='.$data->courseid));
+    redirect(new moodle_url('/course/view.php?id='.$courseid));
 } else if ($data = $form->get_data()) {
     //print_r($data);
     $usersids = $_POST['usersids'];
