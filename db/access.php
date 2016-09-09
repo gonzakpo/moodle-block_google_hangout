@@ -32,20 +32,31 @@ $capabilities = array(
         'archetypes' => array(
             'user' => CAP_ALLOW
         ),
-
         'clonepermissionsfrom' => 'moodle/my:manageblocks'
     ),
 
     'block/google_hangout:addinstance' => array(
         'riskbitmask' => RISK_SPAM | RISK_XSS,
-
         'captype' => 'write',
         'contextlevel' => CONTEXT_BLOCK,
         'archetypes' => array(
             'editingteacher' => CAP_ALLOW,
             'manager' => CAP_ALLOW
         ),
-
         'clonepermissionsfrom' => 'moodle/site:manageblocks'
+    ),
+
+    'moodle/block:view' => array(
+        'riskbitmask' => RISK_SPAM | RISK_XSS,
+
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_BLOCK,
+        'archetypes' => array(
+            'student' => CAP_PROHIBIT,
+            // 'editingteacher' => CAP_ALLOW,
+            // 'manager' => CAP_ALLOW
+        ),
+
+        'clonepermissionsfrom' => 'moodle/block:view'
     ),
 );

@@ -56,7 +56,7 @@ class selectusers_to_hanghout_with_form extends moodleform {
             //$mform->setDefault('usersids', $user->id);
         }
         $buttons = array();
-        $buttons[] =& $mform->createElement('submit', 'send', get_string('email_send','block_configurable_reports'));
+        $buttons[] =& $mform->createElement('submit', 'send', get_string('emailsend','block_google_hangout'));
         $buttons[] =& $mform->createElement('cancel');
 
         $mform->addGroup($buttons, 'buttons', get_string('actions'), array(' '), false);

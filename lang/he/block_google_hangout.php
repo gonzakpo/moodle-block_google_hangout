@@ -22,6 +22,7 @@
  * @copyright Nadav Kavalerchik <nadavkav@gmail.com>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+defined('MOODLE_INTERNAL') || die();
 
 $string['blockstring'] = 'Google Hangout';
 $string['descconfig'] = 'Description of the config section';
@@ -33,3 +34,5 @@ $string['google_hangout:myaddinstance'] = 'Add a google_hangout block to my mood
 $string['pluginname'] = 'Google Hangout';
 $string['starthangoutwithfollowing'] = 'הזמנת הצטרפות למפגש המקוון תשלח לדוא"ל של התלמידים הבאים:';
 $string['starthangoutsession'] = 'הקליקו על כפתור ה"Google Hangout" להתחלת המפגש המקוון';
+$string['selectusers'] = 'Select users';
+$string['emailsend'] = 'Email send';

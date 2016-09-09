@@ -66,11 +66,13 @@ class block_google_hangout extends block_base {
             $usersemails .= "{ id : '$user->email', invite_type : 'EMAIL' },";
         }
 
+        $selectusers = get_string('selectusers', 'block_google_hangout');
+
         $this->content->text = "<script src=\"https://apis.google.com/js/platform.js\" async defer></script>
             <g:hangout render=\"createhangout\" invites=\"[$usersemails]\"></g:hangout>";
 
         $this->content->text .=
-        '<br><a href= "'.$CFG->wwwroot.'/blocks/google_hangout/select_users.php?courseid='.$this->page->course->id.'" alt="Select users">Hangout with selected users</a>';
+        '<br><a href= "'.$CFG->wwwroot.'/blocks/google_hangout/select_users.php?courseid='.$this->page->course->id.'" alt="'.$selectusers.'">'.$selectusers.'</a>';
 
         if (! empty($this->config->text)) {
             $this->content->text .= $this->config->text;
